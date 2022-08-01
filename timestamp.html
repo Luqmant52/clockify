@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a6801bd3ea.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="navigation.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="h-5 mx-6 my-5 flex items-center">
+        <div class="">
+            <div class="w-5 h-0.5 bg-black"></div>
+            <div class="w-5 h-0.5 my-1 bg-black"></div>
+            <div class="w-5 h-0.5 bg-black"></div>
+        </div>
+        <div class="mx-4">
+            <img src="src/images/clockify-logo.svg" alt="" srcset="">
+        </div>
+        <div class="absolute right-5 flex items-center">
+            <p>Luqmant51's workspace</p>
+            <div class="mx-6">
+                <a href="/homepage.html"
+                    class="text-blue-400 px-3 py-1 border-2 border-blue-400 rounded hover:bg-blue-400 hover:text-white ">UPGRADE</a>
+            </div>
+            <div class="mx-1 px-2 py-2 border-x-2">
+                <img src="src/images/help.svg" alt="" srcset="">
+            </div>
+            <div class="mx-1 px-2 py-2">
+                <img src="src/images/notification.svg" alt="" srcset="">
+            </div>
+            <div class="mx-1 px-2 border-x-2">
+                <div class="w-9 rounded-full bg-green-800 h-9">
+                    <span class="text-white justify-center items-center mx-2 my-3 py-2">ML</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="h-0.5 bg-gray-400">
+    <div class="flex">
+        <div class="flex w-auto">
+            <div id="product__container__sidebar" class="product__container__sidebar min-w-full">
+                <div title="Timesheet">
+                    <a href="/timestamp.html" class="flex items-center"><img
+                            src="https://clockify.me/assets/nav-icons/timesheet.svg"
+                            alt="icon"><span>Timesheet</span></a>
+                </div>
+                <div title="Time Tracker">
+                    <a href="" class="flex items-center"><img
+                            src="https://clockify.me/assets/nav-icons/time-tracker.svg" alt="icon">
+                        <span>Timetracker</span></a>
+                </div>
+                <div id="product__analyze">
+                    <p>Analyze</p>
+                </div>
+                <div title="Dashboard">
+                    <a href="" class="flex items-center"><img src="https://clockify.me/assets/nav-icons/dashboard.svg"
+                            alt="icon">
+                        <span>Dashboard</span></a>
+                </div>
+                <div id="product__manage">
+                    <p>Manage</p>
+                </div>
+                <div title="Team">
+                    <a href="" class="flex items-center"><img src="https://clockify.me/assets/nav-icons/teams.svg"
+                            alt="icon">
+                        <span>Team</span></a>
+                </div>
+                <div title="Clients">
+                    <a href="" class="flex items-center"><img src="https://clockify.me/assets/nav-icons/clients.svg"
+                            alt="icon">
+                        <span>Clients</span></a>
+                </div>
+                <div title="Tags">
+                    <a href="" class="flex items-center"><img src="https://clockify.me/assets/nav-icons/tags.svg"
+                            alt="icon">
+                        <span>Tags</span></a>
+                </div>
+                <div title="Settings">
+                    <a href="" class="flex items-center"><img src="https://clockify.me/assets/nav-icons/settings.svg"
+                            alt="icon">
+                        <span>Settings</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-200 w-[90%] items-center">
+            <div class="mx-8 mt-7 w-[96%] border border-gray-300 rounded h-14 flex bg-white items-center">
+                <input type="text" class="w-[55%] border my-2 mx-5 border-gray-300 p-2 rounded" id="prjname"
+                    placeholder="What are you working on?">
+                <button class="flex items-center" onclick="Show()"><img src="src/images/plus-blue-req.svg" alt=""><span
+                        class="mx-2 text-blue-400">Project</span></button>
+                <img src="src/images/tag-gray.svg" class="ml-9 border-x-2 px-6" alt="">
+                <span class="mx-4" id="timeStart">00:00:00</span>
+                <span class="mx-4" id="time">00:00:00</span>
+                <span class="mx-4" id="timeEnd">00:00:00</span>
+                <button class="flex items-center mx-2 text-white bg-blue-400 rounded-lg px-6 py-2" id="btnTime"
+                    onclick="displayTime()">Start</button>
+                </div>
+                <div id="hisShow" class="bg-gray-300 w-72 h-32 hidden ml-[50%] border-2 ">
+                    <input type="text" placeholder="Project Name" class="mx-8 my-2 px-4 py-2 rounded-lg">
+                    <input type="text" placeholder="Project Description" class="mx-8 my-3 px-4 py-2 rounded-lg">
+                </div>
+        </div>
+        <div class="main bg">
+
+        </div>
+    </div>
+    <script src="js/timestamp.js"></script>
+</body>
+
+</html>
