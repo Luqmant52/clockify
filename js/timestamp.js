@@ -55,12 +55,12 @@ function saveData() {
   console.log(timeEnd);
   MainDiv.innerHTML += `<div class="mx-8 px-8 py-4 border-2 my-6 bg-white"><div><strong>${techName}</strong></div>
     <div class="flex mx-4 my-2">
-        <h1 class="m-2"><strong>${prjName}</strong></h1>
-        <p class="m-2">${prjDesc}</p>
+        <h1 class="m-2 px-4 py-2"><strong>${prjName}</strong></h1>
+        <p class="m-2 px-4 py-2">${prjDesc}</p>
     </div>
     <div class="flex mx-4 my-2">
-        <p class="m-2">${timeStart}</p>
-        <p class="m-2">${timeEnd}</p>
+        <p class="m-2 px-4 py-2">${timeStart}</p>
+        <p class="m-2 px-4 py-2">${timeEnd}</p>
     </div>
   </div>`
 

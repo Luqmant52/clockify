@@ -46,12 +46,12 @@
         <div class="flex w-auto">
             <div id="product__container__sidebar" class="product__container__sidebar min-w-full">
                 <div title="Timesheet">
-                    <a href="/timestamp.html" class="flex items-center"><img
+                    <a href="/timeSheet.html" class="flex items-center"><img
                             src="https://clockify.me/assets/nav-icons/timesheet.svg"
                             alt="icon"><span>Timesheet</span></a>
                 </div>
                 <div title="Time Tracker">
-                    <a href="" class="flex items-center"><img
+                    <a href="/timestamp.html" class="flex items-center"><img
                             src="https://clockify.me/assets/nav-icons/time-tracker.svg" alt="icon">
                         <span>Timetracker</span></a>
                 </div>
@@ -90,7 +90,7 @@
         </div>
         <div class="bg-gray-200 w-[90%] items-center">
             <div class="mx-8 mt-7 w-[96%] border border-gray-300 rounded h-14 flex bg-white items-center">
-                <input type="text" class="w-[55%] border my-2 mx-5 border-gray-300 p-2 rounded" id="prjname"
+                <input type="text" class="w-[55%] border my-2 mx-5 border-gray-300 p-2 rounded" id="tecName"
                     placeholder="What are you working on?">
                 <button class="flex items-center" onclick="Show()"><img src="src/images/plus-blue-req.svg" alt=""><span
                         class="mx-2 text-blue-400">Project</span></button>
@@ -100,14 +100,17 @@
                 <span class="mx-4" id="timeEnd">00:00:00</span>
                 <button class="flex items-center mx-2 text-white bg-blue-400 rounded-lg px-6 py-2" id="btnTime"
                     onclick="displayTime()">Start</button>
+                <button class="flex items-center mx-2 text-white bg-green-400 rounded-lg px-6 py-2" id="btnSave"
+                    onclick="saveData()">Save</button>
                 </div>
                 <div id="hisShow" class="bg-gray-300 w-72 h-32 hidden ml-[50%] border-2 ">
-                    <input type="text" placeholder="Project Name" class="mx-8 my-2 px-4 py-2 rounded-lg">
-                    <input type="text" placeholder="Project Description" class="mx-8 my-3 px-4 py-2 rounded-lg">
+                    <input type="text" placeholder="Project Name" id="prjName" class="mx-8 my-2 px-4 py-2 rounded-lg">
+                    <input type="text" placeholder="Project Description" id="prjDesc" class="mx-8 my-3 px-4 py-2 rounded-lg">
                 </div>
-        </div>
-        <div class="main bg">
-
+                
+                <div class="flex flex-col-reverse" id="main">
+        
+                </div>
         </div>
     </div>
     <script src="js/timestamp.js"></script>
